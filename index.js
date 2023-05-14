@@ -17,11 +17,11 @@ app.get('/news', (req, res) => {
   res.send(news)
 })
 
-// app.get('/news/:id', (req, res) => {
-//   const id = req.params.id;
-//   const selectedNews = news.find(item => item._id === id);
-//   res.send(selectedNews)
-// })
+app.get('/news/:id', (req, res) => {
+  const id = req.params.id;
+  const selectedNews = news.find(item => item._id === id);
+  res.send(selectedNews)
+})
 
 app.get('/category/:id', (req, res) => {
   const id = parseInt(req.params.id);
