@@ -9,6 +9,7 @@ app.use(express.json());
 const categories = require('./data/categories.json');
 const news = require('./data/news.json');
 
+// get home page
 app.get('/', (req, res) => {
   res.send('Hello Dragon!')
 })
