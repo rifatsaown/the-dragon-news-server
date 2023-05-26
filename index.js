@@ -1,3 +1,4 @@
+// Description: This file is the main entry point for the application.
 const express = require('express');
 const cors = require('cors');
 const app = express();
