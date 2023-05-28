@@ -16,6 +16,7 @@ const news = require('./data/news.json');
 app.get('/', (req, res) => {
   res.send('Hello Dragon!')
 })
+
 // get all news
 app.get('/news', (req, res) => {
   res.send(news)
