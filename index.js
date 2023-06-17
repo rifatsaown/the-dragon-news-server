@@ -38,6 +38,7 @@ app.get('/categories', (req, res) => {
   res.send(categories)
 })
 
+// app is listening on port
 app.listen(port, () => {
   console.log(`Dragon app listening on port ${port}`)
 })
