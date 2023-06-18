@@ -34,6 +34,7 @@ app.get('/category/:id', (req, res) => {
   }
 })
 
+// get all categories
 app.get('/categories', (req, res) => {
   res.send(categories)
 })
