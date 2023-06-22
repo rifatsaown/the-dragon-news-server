@@ -23,6 +23,7 @@ app.get('/news/:id', (req, res) => {
   res.send(selectedNews)
 })
 
+// get news by category
 app.get('/category/:id', (req, res) => {
   const id = parseInt(req.params.id);
   if (id === 0) {
