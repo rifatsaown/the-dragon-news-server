@@ -22,7 +22,6 @@ app.get('/news/:id', (req, res) => {
   const selectedNews = news.find(item => item._id === id);
   res.send(selectedNews)
 })
-
 // get news by category
 app.get('/category/:id', (req, res) => {
   const id = parseInt(req.params.id);
